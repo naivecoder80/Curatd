@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+<androidx.core.widget.NestedScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ss"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter  Name"
+        android:singleLine="true"
+        android:layout_marginTop="20dp">
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Gender"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp">
+
+<RadioButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Male"
+    android:layout_marginTop="10dp">
+</RadioButton>
+<RadioButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Female"
+    android:layout_marginTop="10dp">
+</RadioButton>
+<RadioButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Others"
+    android:layout_marginTop="10dp">
+
+</RadioButton>
+
+
+
+</RadioGroup>
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#34bdeb"
+        android:src="@drawable/baseline_done_white_18dp" />
+</RelativeLayout>
